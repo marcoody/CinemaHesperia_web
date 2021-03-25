@@ -1,0 +1,365 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	text-align:left;
+}
+
+html{
+	font-size: 13pt;
+}
+
+body{
+	background-color: #ffffff;
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+h2{
+	text-align: center;
+	font-weight: 500;
+	font-size: 15pt;
+	margin: 1.5em;
+}
+
+h3{
+	font-size: 14pt;
+}
+
+a{
+	text-decoration:none;
+	color: #000000;
+}
+
+.accent{
+	color:black;
+	font-weight:bold;
+}
+ul{
+	list-style-type: none;
+}
+
+fieldset{
+	border: none;
+}
+
+:visited, a:visited{
+	color: black;
+}
+
+.accent{
+	color: black;
+}
+
+
+.container{
+	text-align: left;
+}
+
+.container h2, .container h3{
+	text-align: left;
+	font-size: 15pt;
+	margin: 0;
+	margin-top: 1em;
+	font-weight:bold;
+}
+
+.container h3{
+	font-size: 14pt;
+}
+
+.container ul{
+	list-style-type: initial;
+}
+
+#header{
+	background-color: #ffffff;
+	border-style: none;
+}
+
+#header h1{
+	text-align: center;
+	display:block;
+	overflow:visible;
+	text-indent: 0;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size:30pt;
+	margin: 0.3em;
+	color:black;
+}
+
+#logo img{
+	display:none;
+}
+
+#logo a{
+	display:none;
+}
+.error , #java_error{
+	display:none;
+}
+
+/*menu */
+
+#menu{
+	display:none;
+}
+
+
+/* footer */
+
+#footer{
+	display:none;
+}
+
+
+/* locandina film */
+
+a.title{
+	font-size: 13pt;
+	font-weight: 400;
+	text-align: left;
+}
+
+.locandina img{
+	width: 100%;
+	height: 25em;
+	object-fit: cover;
+}
+
+
+/*///////////////////////////////film_details.html/////////////////////*/
+
+.film_details ul li{
+	padding: 0.5em 0;
+}
+
+.bottone{
+	display:none;
+}
+
+#form_details input{
+	margin-top: 0.8em;
+}
+
+
+/*//////////////////////////info.html/////////////////////////////*/
+
+#content table caption{
+	font-weight: bold;
+	font-size: 15pt;
+	margin: 1em;
+}
+#content h2{
+	font-size: 15pt;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+#content p{
+	font-size: 13pt;
+	margin-bottom:0.5em;
+}
+
+#content table{
+	border-color: black;
+	border-width: thin;
+}
+
+#content th{
+	font-size: 14pt;
+	font-weight: 300;
+
+}
+
+#content td{
+	font-size: 13pt;
+
+}
+
+
+/*//////////////////////////contatti/////////////////////////////*/
+
+#contact_list{
+	list-style: none;
+	margin-top: 1em;
+	font-size: 13pt;
+}
+#contact_list li{
+	margin-top:1em;
+	font-weight:bold;
+}
+
+#contact_list li a{
+	font-weight:normal;
+}
+
+
+/*///////////////////////////programmazione////////////////////*/
+
+.tabs{
+	margin: auto;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tabs li a{
+	background-color: #ffffff;
+	display: block;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 13pt;
+}
+
+
+.tabs .active_tabs{
+	background-color: #000000;
+}
+
+.active_tabs{
+	font-weight:bold;
+}
+
+
+/*///////////////////prenotazione//////////////////*/
+
+#form_n_posti label{
+	font-size: 13pt;
+}
+
+/*////////////////////signup/login///////////////*/
+
+.p_sign_log, .p_sign_log~.error, #java_error,
+#change_password .error{
+	font-size: 13pt;
+	text-align: left;
+	margin: 1em;
+}
+
+#login_form , #change_password{
+	margin: 0em;
+	margin-top: 0em;
+}
+
+#login_form label, #change_password label{
+	font-size: 13pt;
+	text-align: left;
+	margin:0.5em;
+	padding:0;
+}
+
+#login_form input {
+	display:none;
+}
+
+.signup_log_header accent{
+	color:black;
+}
+
+#login_form input.bottone, #signup_form input.bottone, #change_password input.bottone{
+	display:none;
+}
+
+#signup_form{
+	margin-top: 1em;
+	text-align: left;
+}
+
+#signup_form label{
+	font-size: 13pt;
+	padding: 0.5em;
+	text-align: left;
+}
+
+/*/////////////////prenotazioni////////////////*/
+
+.prenotazione{
+	padding: 2em;
+	overflow: auto;
+}
+.prenotazione accent{
+	color:black;
+}
+
+.prenotazione img{
+	float: left;
+	width: 10em;
+	margin: auto;
+	display: block;
+}
+
+.prenotazione ul{
+	display: inline-block;
+	padding: 0 2em;
+	list-style: none;
+}
+
+.prenotazione li{
+	padding: 0.5em;
+}
+
+#form_n_posti{
+	display:none;
+}
+
+/*////////////////////////////user////////////////////////////*/
+
+.utente ul{
+	text-align: left;
+	list-style: none;
+}
+
+.utente li{
+	font-size: 13pt;
+}
+
+/*////////////////////////////amministrazione////////////////////////////*/
+
+.bottone admin{
+	display:block;
+}
+/*//////////////////////////amministrazione///////////////////////*/
+
+#content .proie_table td{
+		border-bottom: 0.10em solid #000000;
+}
+
+#content .proie_table th {
+	border-bottom: 0.2em solid #000000;
+}
+
+#content .proie_table tr:hover{
+	background-color:#ffffff;
+}
+
+#content .proie_table a {
+	background-color: #ffffff;
+	border-color: black;
+}
+
+#content .proie_table .delete_butt {
+		background-color: white;
+}
+
+
+/*//////////////////////////////edit_film//////////////////////*/
+
+#edit_film input, #edit_film textarea, #add_film input, #add_film textarea{
+		text-align: left;
+}
+
+
+#edit_film input[type="file"], #add_film input[type="file"]{
+	color: black;
+}
+
+#edit_p {
+	text-align: left;
+}
+
