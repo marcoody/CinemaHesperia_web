@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Modifica proiezione - Cinema Hesperia</title>
+	<meta name="description" content="Pagina di modifica della pianificazione del Cinema Hesperia"/>
+	<meta name="keywords" content="amministrazione, prenotazioni, biglietti, film, programmazione, proiezione, Cinema Hesperia"/>
+	<meta/>
+	<script type="text/javascript" src="js/projectionCheck.js"></script>
+</head>
+<body>
+	<div id="header"/>
+
+	<div id="content">
+		<h2>%Titolo%</h2>
+		<p id="proj_error"></p>
+
+		<form action="%editprojection%" method="post" id="edit_projection">
+			<fieldset >
+				<label for="film">Film:</label>
+				<select name="film" id="film">%ListaFilm%</select>
+				<label for="data">Data:</label>
+				<input type="text" name="data" id="data" value="%Data%"/>
+				<label for="ora">Ora:</label>
+				<input type="text" name="ora" id="ora" value="%Ora%"/>
+				<label for="sala">Sala:</label>
+				<select name="sala" id="sala">%Sale%</select>
+				<input type="hidden" name="proiezione" value="%Proiezione%"/>
+				<input type="submit" name="submit" value="Conferma" class="bottone"/>
+			</fieldset>
+		</form>
+	</div>
+
+	<div id="footer"/>
+</body>
+</html>

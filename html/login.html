@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Accedi - Cinema Hesperia</title>
+	<meta name="description" content="Pagina di login, un account registrato potrà acquistare biglietti per le proiezioni presso in Cinema Hesperia e vedere gli acquisti effettuati nell'area personale"/>
+	<meta name="keywords" content="Account, accedi, area personale, biglietti, cinema, film, prenotazioni, Cinema Hesperia"/>
+	<meta/>
+	<script type="text/javascript" src="js/loginFormCheck.js"></script>
+</head>
+<body>
+	<div id="header"/>
+
+	<div id="content">
+		<h2 xml:lang="en" class="signup_log_header accent">Log in</h2>
+
+		<p class="p_sign_log">Se sei già registrato, inserisci <span xml:lang="en">username</span> e <span xml:lang="en">password</span> qui sotto per prenotare il tuo spettacolo</p>
+		<p id="error"></p>
+
+		<form action="%loginphp%" id="login_form" method="post">
+			<fieldset>
+				<legend>Inserisci <span xml:lang="en">username</span> e <span xml:lang="en">password</span>: </legend>
+				<label for="username_input" xml:lang="en">Username:</label>
+				<input type="text" id="username_input" name="username" value="%username%"/>
+
+				<label for="password_input" xml:lang="en">Password:</label>
+				<input type="password" id="password_input" name="password"/>
+
+				<input type="submit" id="submit" class="bottone" value="Accedi"/>
+			</fieldset>
+		</form>
+
+		<p class="p_sign_log">Non sei ancora iscritto? Allora <a href="signup.php" class="accent">Registrati</a></p>
+	</div>
+
+	<div id="footer"/>
+</body>
+</html>

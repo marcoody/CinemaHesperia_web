@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Modifica film - Cinema Hesperia</title>
+	<meta name="description" content="Pagina di modifica della pianificazione del Cinema Hesperia"/>
+	<meta name="keywords" content="amministrazione, film, biglietti, programmazione, Cinema Hesperia"/>
+	<meta/>
+	<script type="text/javascript" src="js/editfilmCheck.js"></script>
+</head>
+<body>
+	<div id="header"/>
+
+	<div id="content">
+		<h2>%Intestazione%</h2>
+		<p id="edit_error"></p>
+	<!--	<div>%codfilm%</div> -->
+
+
+		<form  id="edit_film" action="%editfilm%" method="post" enctype="multipart/form-data">
+			<fieldset >
+				<label for="titolo">Film:</label>
+				<input type="text" name="titolo" id="titolo" value="%Titolo%"/>
+				<label for="durata">durata:</label>
+				<input type="text" name="durata" id="durata" value="%durata%"/>
+				<label for="anno">anno:</label>
+				<input type="text" name="anno" id="anno" value="%anno%"/>
+				<label for="regia">Regista:</label>
+				<input type="text" name="regia" id="regia" value="%regia%"/>
+				<label for="genere">genere:</label>
+				<textarea name="genere" id="genere" cols="40" rows="5" >%genere%</textarea>
+				<!--<input type="text" name="genere" id="genere" value="%genere%"/>-->
+				<label for="cast">cast:</label>
+				<textarea name="cast" id="cast" cols="40" rows="5" >%cast%</textarea>
+				<!--<input type="text" name="cast" id="cast" value="%cast%"/> -->
+				<label for="trama">trama:</label>
+				<textarea name="trama" id="trama" cols="40" rows="5" >%trama%</textarea>
+				<input type="hidden" name="codfilm" value="%codfilm%"/>
+				<label for="fileToUpload"> Inserisci immagine:</label>
+				<input type="file" name="fileToUpload" id="fileToUpload"/>
+				<input type="submit" name="submit" value="Conferma" class="bottone"/>
+			</fieldset>
+		</form>
+		<p id="edit_p"> Elimina Questo film, le relative programmazioni e prenotazioni: </p>
+		<a href="php/deletefilm.php?film=%codfilm% " class="bottone admin rosso">Cancella questo film</a>
+
+	</div>
+
+	<div id="footer"/>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Registrati - Cinema Hesperia</title>
+	<meta name="description" content="Pagina per la registrazione al Cinema Hesperia, un account registrato potrà acquistare biglietti per le proiezioni presso in Cinema Hesperia e vedere gli acquisti effettuati nell'area personale"/>
+	<meta name="keywords" content="Registrati, accout, area personale, biglietti, cinema, film, prenotazioni, Cinema Hesperia"/>
+	<meta/>
+	<script type="text/javascript" src="js/signupFormCheck.js"></script>
+</head>
+<body>
+	<div id="header"/>
+
+	<div id="content">
+		<h2 xml:lang="en" class="signup_log_header">Registrazione</h2>
+
+		<p class="p_sign_log">Se già registrato? Allora effettua il <a href="login.php" class="accent" xml:lang="en">login</a></p>
+		<p class="p_sign_log">Inserisci i tuoi dati qui sotto per effettuare la registrazione</p>
+		<p id="error"></p>
+
+		<form action="%signupphp%" id="signup_form" method="post">
+			<fieldset>
+				<legend>Inserisci i tuoi dati personali:</legend>
+				<label for="nome">Nome</label>
+				<input type="text" maxlength="30" id="nome" name="nome" value="%nome%"/>
+				<label for="cognome">Cognome</label>
+				<input type="text" maxlength="30" id="cognome" name="cognome" value="%cognome%"/>
+				<label for="username">Username</label>
+				<input type="text" maxlength="30" id="username" name="username" value="%user%"/>
+				<label for="email">Email</label>
+				<input type="text" maxlength="40" id="email" name="email" value="%email%"/>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password"/>
+				<label for="psw-repeat">Ripeti Password</label>
+				<input type="password" id="psw-repeat" name="psw-repeat"/>
+			</fieldset>
+
+			<p class="p_sign_log">Creando un account aderisce alle nostre condizioni di <a href="privacy.html">trattamento dei dati personali</a>.
+				<input type="submit" id="submit" class="bottone" value="Registrati"/>
+			</p>
+		</form>
+	</div>
+
+	<div id="footer"/>
+</body>
+</html>

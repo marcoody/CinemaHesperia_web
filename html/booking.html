@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+<head>
+	<title>Prenota %nomefilmgStrip% - Cinema Hesperia</title>
+	<meta name="description" content="Acquista dei biglietti per %nomefilmgStrip%, che sar&agrave; proiettato nelle sale del Cinema Hesperia"/>
+	<meta name="keywords" content="%nomefilmgStrip%, film, programmazione, proiezione, biglietti, prenota, Cinema Hesperia"/>
+	<meta/>
+</head>
+<body>
+	<div id="header"/>
+
+	<div id="content">
+		<h2>Prenota %nomefilm%</h2>
+		<div id="prenotazione">
+			<div class="prenotazione">
+				<img src="%immagine%" alt="%nomefilmgStrip"/>
+				<ul>
+					<li><span class="accent">Nome e Cognome:</span> %nome% %cognome%</li>
+					<li><span class="accent">Film:</span> %nomefilm%</li>
+					<li><span class="accent">Data Proiezione:</span> %data%</li>
+					<li><span class="accent">Orario Proiezione:</span> %orario%</li>
+					<li><span class="accent">Sala:</span> %sala%</li>
+					<li><span class="accent">Posti occupati:</span> %postioccupati%</li>
+				</ul>
+			</div>
+			<form action="php/book.php" id="form_n_posti" method="post">
+				<div>
+					<label for="posti" class="accent"> Scegli numero di posti da prenotare: </label>
+					<select name="posti" id="posti"><posti/></select>
+					<input type="hidden" name="proiezione" value="%proiezione%"/>
+					<input type="submit" class="bottone" value="Conferma"/>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="footer"/>
+</body>
+</html>
